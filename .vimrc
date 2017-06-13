@@ -65,7 +65,9 @@ set noexpandtab
 set number
 " Searching
 set hlsearch
+set ignorecase
 set smartcase
+set incsearch
 " Using the mouse for scrolling, but then the terminal can not use the mouse
 " any more
 " set mouse=a
