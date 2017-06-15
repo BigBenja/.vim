@@ -84,10 +84,20 @@ nnoremap k gk
 nnoremap ; :
 " don't continue single line comments //"
 au FileType c,cpp setlocal comments-=:// comments+=f://
-" when pasting comments, disable autoindent with F2
+" when pasting comments, disable autoindent with F10
 nnoremap <F10> :set invpaste paste?<CR>
 set pastetoggle=<F10>
 set showmode
+" netrw settings
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+augroup ProjectDrawer
+	autocmd!
+	autocmd VimEnter * :Vexplore
+augroup END
 
 
 " Settings for VimCompletesMe
