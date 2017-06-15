@@ -63,6 +63,7 @@ set shiftwidth=4
 set noexpandtab
 " Display line numbers
 set number
+set relativenumber
 " Searching
 set hlsearch
 set ignorecase
