@@ -97,7 +97,13 @@ let g:netrw_winsize = 25
 augroup ProjectDrawer
 	autocmd!
 	autocmd VimEnter * :Vexplore
+	autocmd VimEnter * wincmd l 
 augroup END
+"easier split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 
 " Settings for VimCompletesMe
