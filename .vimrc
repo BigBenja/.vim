@@ -29,7 +29,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " BenGal personal plugins:
 "Doesn't work with VIM 8, but use as soon as available  Plugin 'Valloric/YouCompleteMe'
-Plugin 'ajh17/VimCompletesMe'
+Plugin 'Valloric/YouCompleteMe'
+"Plugin 'ajh17/VimCompletesMe'
 
 " Commenting blocks of code
 Plugin 'scrooloose/nerdcommenter'
@@ -64,6 +65,7 @@ set expandtab
 " Display line numbers
 set number
 set relativenumber
+set ruler
 " Searching
 set hlsearch
 set ignorecase
@@ -93,7 +95,7 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
-let g:netrw_winsize = 25
+let g:netrw_winsize = 15
 augroup ProjectDrawer
 	autocmd!
 	autocmd VimEnter * :Vexplore
@@ -119,4 +121,8 @@ if has('persistent_undo')
     set undofile
 endif
 
-" Settings for VimCompletesMe
+"problems with backspace in vi 8.0"
+set backspace=indent,eol,start
+
+" Settings for YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
