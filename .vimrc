@@ -37,8 +37,8 @@ Plugin 'ajh17/VimCompletesMe'
 Plugin 'scrooloose/nerdcommenter'
 
 " Syntax Checking
-"Plugin 'vim-syntastic/syntastic'
-Plugin 'w0rp/ale'
+Plugin 'vim-syntastic/syntastic'
+"Plugin 'w0rp/ale'
 
 " Powerline status line
 "Plugin 'powerline/powerline'
