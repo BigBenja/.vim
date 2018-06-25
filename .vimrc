@@ -106,6 +106,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" use the system clipboard
+set clipboard=unnamed
 
 " enable persistent history, save undo files in .vim directory
 let vimDir = '$HOME/.vim'
