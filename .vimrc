@@ -28,12 +28,27 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " BenGal personal plugins:
-"Doesn't work with VIM 8, but use as soon as available  Plugin 'Valloric/YouCompleteMe'
-Plugin 'Valloric/YouCompleteMe'
-"Plugin 'ajh17/VimCompletesMe'
+
+" Autocompletion
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'ajh17/VimCompletesMe'
 
 " Commenting blocks of code
 Plugin 'scrooloose/nerdcommenter'
+
+" Syntax Checking
+"Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
+
+" Powerline status line
+"Plugin 'powerline/powerline'
+"Plugin 'powerline/powerline-fonts'
+"Plugin 'vim-airline/vim-airline'
+Plugin 'itchyny/lightline.vim'
+
+" Better searching
+Plugin 'ctrlpvim/ctrlp.vim'
+"TODO install fzf. But simple vundle installation is not enough
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,3 +143,9 @@ set backspace=indent,eol,start
 
 " Settings for YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+" For python syntax checking with syntastic
+let python_highlight_all=1
+
+" Ctrlp options
+let g:ctrlp_working_path_mode = 'ra'
