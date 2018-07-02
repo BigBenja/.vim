@@ -50,6 +50,9 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 "TODO install fzf. But simple vundle installation is not enough
 
+" Autopep8 formatting for python
+Plugin 'tell-k/vim-autopep8'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -149,3 +152,6 @@ let python_highlight_all=1
 
 " Ctrlp options
 let g:ctrlp_working_path_mode = 'ra'
+
+" Automatically format to PEP 8 style every time saving a python file
+let g:autopep8_on_save = 1
