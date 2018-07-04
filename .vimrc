@@ -155,3 +155,4 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " Automatically format to PEP 8 style every time saving a python file
 let g:autopep8_on_save = 1
+let g:autopep8_disable_show_diff=1
